@@ -1,5 +1,5 @@
-var temp_C = prompt("Введите температуру в градусах Цельсия: ")
-var temp_F = (9 / 5) * temp_C + 32
-var temp_F_short = Math.round(temp_F)
-var massage = ("Цельсий: " + temp_C + ", " + "Фаренгейт: " + temp_F_short)
-alert(massage)
+
+const temp_C = Number.parseFloat(prompt("Введите температуру в градусах Цельсия: "));
+const temp_F = ((9 / 5) * temp_C + 32).toFixed(2);
+let massage = ("Цельсий: " + temp_C + ", " + "Фаренгейт: " + temp_F);
+alert(massage);
